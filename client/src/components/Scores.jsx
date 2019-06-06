@@ -170,9 +170,7 @@ class Scores extends Component {
           </button>
         </div>
 
-        <div>
-          <button className="h-button" onClick={ this.routeToHome }> home </button>
-        </div>
+        <button className="h-button" onClick={ this.routeToHome }> home </button>
       </div>
     );
   }
