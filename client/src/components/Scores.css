@@ -107,8 +107,8 @@ input {
 }
 
 .h-button {
-    height: 30%;
-    width: 60%;
+    height: 6vh;
+    width: 75vh;
     border-color: #D9E5F9;
     border-radius: 0.4rem;
     font-size: 2vh;
