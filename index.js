@@ -68,13 +68,12 @@ app.post('/api/delete-player', async (req, res) => {
   res.json("You successfully deleted: ".concat(name));
 })
 
-// The "catchall" handler: for any request that doesn't
-// match one above, send back React's index.html file.
+// For any request that doesn't match, we'll send the index.html file from the client.
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname+'/client/build/index.html'));
 });
 
-const port = process.env.PORT || 5001;
+const port = process.env.PORT || 5000;
 app.listen(port);
 
-console.log(`Score tracker API listening on ${port}`);
+console.log(`score-tracker listening on ${port}`);
